@@ -1,0 +1,24 @@
+{
+  "name": "miniprojeto_com_ejs_e_node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caetanaldo/MiniProjeto_Com_Ejs_e_Node.js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caetanaldo/MiniProjeto_Com_Ejs_e_Node.js/issues"
+  },
+  "homepage": "https://github.com/caetanaldo/MiniProjeto_Com_Ejs_e_Node.js#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  }
+}
