@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <%- include('partes/header') %>
+
+      <h2>Página de Produtos</h2>
+      <h1>lista de Produtos</h1>
+
+      <ul>
+        <% produtos.forEach(p => { %>
+
+        <li><%= p.nome %> - R$ <%= p.preco.toFixed(2) %></li>
+
+        <% }) %>
+      </ul>
+
+      <p>Bem vindo ao nosso site!</p>
+
+      <%- include('partes/footer') %>
+    </main>
+  </body>
+</html>

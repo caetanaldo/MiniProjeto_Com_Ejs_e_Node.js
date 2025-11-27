@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <%- include('partes/header') %>
+
+      <h2>Página de Produtos</h2>
+
+      <ul>
+        <% produtos.forEach(prod =>{ %>
+
+        <li>
+          <%= prod.nome %> - R$ <%= prod.preco.toFixed(2) %> <%
+          if(prod.promocao) { %>
+
+          <strong style="color:red">(Em Promoção)</strong>
+          <% } %>
+        </li>
+        <% }) %>
+      </ul>
+
+      <%- include('partes/footer') %>
+    </main>
+  </body>
+</html>
